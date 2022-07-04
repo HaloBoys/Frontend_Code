@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            margin: 100px auto;
+            width: 450px;
+            height: 280px;
+        }
+
+        .box .tudou {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            display: none;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5) url(./Static/img/arr.png) no-repeat center;
+        }
+
+        /* 注意此处写法：当鼠标经过了土豆这个盒子，就让里面遮罩层显示出来 */
+
+        .box:hover::after {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <img src="./Static/img/tudou.jpg" alt="" class="tudou">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            position: relative;
+            float: left;
+            margin-left: -1px;
+            list-style: none;
+            width: 100px;
+            height: 150px;
+            border: 1px solid steelblue;
+        }
+
+        /* 添加鼠标 hover 边框效果 */
+
+        /* 1. 如果父级没有有定位，则加相对定位（保留位置） */
+        /* ul li:hover {
+            position: relative;
+            border: 1px solid red;
+        } */
+
+        /* 如果父级有定位，则加z-index */
+        ul li:hover {
+            z-index: 1;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+            border: 1px solid pink;
+            margin: 50px;
+        }
+
+
+        .elem {
+            height: 100px;
+            width: 200px;
+            background-color: lightsteelblue;
+        }
+
+        .indent {
+            text-indent: 2em;
+            font-size: 24px;
+        }
+
+        .line-height {
+            border: 1px solid slateblue;
+            line-height: 80px;
+        }
+
+        .img {
+            background-color: #282c34;
+            text-align: center;
+        }
+        .duibi {
+            background-color: #282c34;
+            color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>文字居中</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <div class="elem">
+            // text-align 不会让盒子居中
+        </div>
+    </div>
+    <hr>
+    <h1>首行缩进</h1>
+    <span class="indent">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima harum assumenda, et, dolore, voluptatibus
+            tempore eius voluptas nihil amet dolor iure quam sunt laboriosam quidem quisquam voluptates provident earum
+            illo!
+        </p>
+        <p class="line-height">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+    </span>
+    <hr>
+    <h1>图片居中对齐，可以将text-align属性加到图片父级盒子上。</h1>
+    <p class="duibi">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p class="img">
+        <img src="./static/img/pic.png" alt="" width="500px">
+    </p>
+</body>
+
+</html>

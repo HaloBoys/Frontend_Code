@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            position: relative;
+            margin: 0 auto;
+            width: 900px;
+            height: 520px;
+        }
+
+        .box img {
+            width: 100%;
+        }
+
+        .prev {
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            left: 0;
+            width: 50px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 40px;
+            color: #fff;
+            background-color: rgba(0, 0,0, .3);
+            border-radius: 0 60px 60px 0;
+        }
+        .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            right: 0;
+            width: 50px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 40px;
+            color: #fff;
+            background-color: rgba(0, 0,0, .3);
+            border-radius: 60px 0 0 60px;
+        }
+        .point {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            margin-left: -50px;
+            width: 100px;
+            height: 20px;
+            background-color: #1e90ff;
+            border-radius: 20px;
+        }
+        .point li {
+            margin: 5px 4px 3px 5px;
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0,0, .3);
+        }
+        .point .selected {
+            background-color: #ff5c01;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./Static/img/lunbotu.jpeg" alt="">
+        <a href="#" class="prev">&lt</a>
+        <a href="#" class="next">&gt</a>
+        <ul class="point">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

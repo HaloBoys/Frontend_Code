@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol li {
+            color: pink;
+        }
+
+        .son li>a {
+            text-decoration: none;
+        }
+
+        .nav ul>li>a {
+            color: red;
+        }
+
+        .nav>a {
+            color: darkcyan;
+        }
+        .focusT input:focus {
+             background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>后代选择器</h1>
+    <ul>
+        <li>1lorem</li>
+        <li>2lorem</li>
+        <li>3lorem</li>
+    </ul>
+    <ol>
+        <li>1Lorem</li>
+        <li>2Lorem</li>
+        <li>3Lorem</li>
+    </ol>
+
+    <h1>子选择器</h1>
+    <ul class="son">
+        <li>Lorem</li>
+        <li>
+            <a href="#">AAAAA</a>
+        </li>
+    </ul>
+    <div class="nav">
+        <a href="#">GOOGLE</a>
+        <span>
+            <a href="#">GOOGLE</a>
+
+        </span>
+        <ul>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">百度</a></1i>
+        </ul>
+    </div>
+    <h1>
+        :focus 伪类选择器
+    </h1>
+    <form action="" class="focusT">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+    </form>
+</body>
+
+</html>

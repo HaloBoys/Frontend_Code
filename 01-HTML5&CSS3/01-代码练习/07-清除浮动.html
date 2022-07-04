@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 2. **父级添加overflow属性** */
+            /* overflow: hidden; */
+            margin: 100px auto;
+            width: 1000px;
+            background-color: #2e706f;
+        }
+
+        .son1 {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+        }
+
+        .son2 {
+            float: right;
+            width: 300px;
+            height: 300px;
+            background-color: khaki;
+        }
+
+        /* 1. 额外标签法
+        .clear {
+            clear: both;
+        } */
+        .footer {
+            /* width: 1000px; */
+            height: 40px;
+            background-color: turquoise;
+        }
+
+        /* 3. **父级添加after伪元素** */
+        /* .clearfix1:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        } */
+
+        /* .clearfix1 {
+            /*IE6、7专有*/
+        /*zoom: 1;
+        } */
+
+        /* 4. **父级添加双伪元素** */
+        .clearfix2:before,
+        .clearfix2:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix2:after {
+            clear: both;
+        }
+
+        .clearfix2 {
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix1 clearfix2">
+        OUTERBOX
+        <div class="son1">son1</div>
+        <div class="son2">son2</div>
+        <!-- 1. 额外标签法
+        <div class="clear"></div> -->
+    </div>
+    <div class="footer">Footer</div>
+</body>
+
+</html>

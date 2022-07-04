@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .father {
+            margin-bottom: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .son {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .father1 {
+            margin-top: 15px;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .son1 {
+            margin-top: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        让`块级盒子水平居中`，方法：`margin: 0 auto;`
+    </h1>
+    <div class="center">
+    </div>
+    <h1>
+        外边距合并问题：
+    </h1>
+    <h2>
+        相邻块元素垂直外边距的合并。
+    </h2>
+    <p>
+        解决方案：`尽量只给一个盒子添加margin值。`
+    </p>
+    <hr>
+    <div class="father"></div>
+    <div class="son"></div>
+    <hr>
+    <h2>
+        嵌套块元素垂直外边距的塌陷。
+    </h2>
+    <p>
+        
+    </p>
+    <hr>
+    <div class="father1">
+        <div class="son1"></div>
+    </div>
+    <hr>
+</body>
+
+</html>

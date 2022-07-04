@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 0;
+            height: 0;
+            border-color: transparent red transparent transparent;
+            border-style: solid;
+            border-width: 22px 8px 0 0;
+        }
+
+        .price {
+            position: relative;
+            margin: 100px auto;
+            width: 180px;
+            height: 30px;
+            border: 1px solid #e02617;
+            line-height: 30px;
+            text-align: center;
+            background-color: steelblue;
+        }
+
+        .triangle {
+            position: absolute;
+            left: 50%;
+            margin-left: -15px;
+            width: 0;
+            height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            border-width: 30px 15px 0 0;
+        }
+
+        .price .new,
+        .price .old {
+            float: left;
+            display: inline-block;
+            width: 90px;
+            height: 30px;
+            color: #fff;
+            background-color: #e02617;
+        }
+
+        .price .old {
+            background-color: #fcfffc;
+            color: #aeb1ad;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="price">
+        <div class="triangle"></div>
+        <span class="new"><b>$39.00</b>&nbsp;&nbsp;&nbsp;</span>
+        <span class="old">&nbsp;&nbsp;&nbsp;<s>$96.00</s></span>
+    </div>
+</body>
+
+</html>

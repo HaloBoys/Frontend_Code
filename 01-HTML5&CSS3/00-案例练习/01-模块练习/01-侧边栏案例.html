@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .side {
+            width: 400px;
+            height: 400px;
+            /* background-color: #535758; */
+            background-image:
+                linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+                url('https://mdn.mozillademos.org/files/7693/catfront.png');
+        }
+
+        .side ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .side ul li {
+            margin-bottom: 50px;
+        }
+
+        .side ul a {
+            display: block;
+            height: 40px;
+            line-height: 35px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .side ul a:hover {
+            background-color: tomato;
+        }
+
+        .side2 {
+            text-indent: 2em;
+            width: 400px;
+            height: 400px;
+        }
+
+        .side2 a {
+            display: block;
+            height: 80px;
+            line-height: 80px;
+            color: #fff;
+            font-size: 24px;
+            background-color: #282c34;
+            text-decoration: none;
+        }
+
+        .side2 a:hover {
+            background-color: tomato;
+        }
+        .side2 a span {
+            display: inline-block;
+            height: 80px;
+            width: 80px;
+            /* background-color: blue; */
+            background-image: url(/01-HTML5&CSS3/static/img/sprite.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>侧边栏练习1</h1>
+    <br><br><br>
+    <div class="side">
+        <ul>
+            <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+        </ul>
+    </div>
+    <br><br><br>
+    <h1>侧边栏练习2</h1>
+    <br><br><br>
+    <div class="side2">
+        <a href="#"><span></span> Lorem</a>
+        <a href="#"><span></span> Lorem</a>
+        <a href="#"><span></span> Lorem</a>
+        <a href="#"><span></span> Lorem</a>
+        <a href="#"><span></span> Lorem</a>
+    </div>
+</body>
+
+</html>
